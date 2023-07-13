@@ -1,0 +1,39 @@
+﻿version: '3.1'
+
+services:
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: TelemetryTitans
+      POSTGRES_DB: pantryPulse
+    volumes:
+      - C:/pantry_pulse/data/db:/var/lib/postgresql/data
+    networks:
+      - backend-network
+    ports:
+      - "5432:5432"
+        
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+    networks:
+      - backend-network
+
+  webapi:
+    build: .
+    ports:
+      - "80:80"
+      - "443:443"
+      - "1883:1883"
+    depends_on:
+      - db
+    networks:
+      - backend-network
+
+networks:
+  backend-network:

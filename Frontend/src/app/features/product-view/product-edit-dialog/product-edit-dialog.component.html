@@ -1,0 +1,24 @@
+
+<h1 mat-dialog-title>{{pageTitle}}</h1>
+<div>
+
+  <mat-dialog-content>
+    <mat-form-field class="formfield">
+      <input matInput [(ngModel)]="data.id" name="id" readonly="true"/>
+    </mat-form-field>
+
+    <mat-form-field class="formfield">
+      <input matInput [(ngModel)]="data.name" name="xxx">
+    </mat-form-field>
+    <mat-form-field class="formfield">
+      <input matInput [(ngModel)]="data.regularWeight" name="regularWeight">
+    </mat-form-field>
+  </mat-dialog-content>
+</div>
+<div>
+  <mat-dialog-actions>
+    <button mat-button [mat-dialog-close]="data" cdkFocusInitial>Speichern</button>
+    <button mat-button mat-dialog-close>Abbrechen</button>
+  </mat-dialog-actions>
+</div>
+

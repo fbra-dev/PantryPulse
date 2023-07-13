@@ -1,0 +1,8 @@
+<div *ngFor="let alert of alerts" class="{{cssClass(alert)}}">
+  <div class="example-button-container">
+  <span [innerHTML]="alert.message"></span>
+    <button mat-mini-fab color="warn" (click)="removeAlert(alert)">
+      <mat-icon>accessible_forward</mat-icon>
+    </button>
+  </div>
+</div>

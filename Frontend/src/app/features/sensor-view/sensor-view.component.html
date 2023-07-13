@@ -1,0 +1,22 @@
+<div *ngFor="let sensor of sensorViewService.data; index as i; first as isFirst">
+  <mat-card>
+    <mat-card-content class="mat-card-content"><mwl-gauge
+      [max]="5000"
+      [dialStartAngle]="0"
+      [dialEndAngle]="180"
+      [value]="sensor.Info? sensor.Info.weight : 0"
+      [animated]="true"
+      [animationDuration]="0.5"
+      [label]="getDynamicLabel"
+    >
+    </mwl-gauge>
+      <label class="sensorLabel" [innerHTML]="sensor.name"></label>
+      </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button (click)="onEditSensorButtonClick(sensor)">Bearbeiten</button>
+      </mat-card-actions>
+  </mat-card>
+
+
+</div>
+

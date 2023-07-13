@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Backend.WebApi", "Backend.WebApi\Backend.WebApi.csproj", "{D2421244-030A-423C-8582-B728CAADA36E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B20AA615-6C85-4E73-B984-7CAE41800B16}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestMqttClient", "TestMqttClient\TestMqttClient.csproj", "{7669A5A5-0E8C-4C58-B977-B0E9B7EE2F7D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D2421244-030A-423C-8582-B728CAADA36E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2421244-030A-423C-8582-B728CAADA36E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2421244-030A-423C-8582-B728CAADA36E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2421244-030A-423C-8582-B728CAADA36E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7669A5A5-0E8C-4C58-B977-B0E9B7EE2F7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7669A5A5-0E8C-4C58-B977-B0E9B7EE2F7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7669A5A5-0E8C-4C58-B977-B0E9B7EE2F7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7669A5A5-0E8C-4C58-B977-B0E9B7EE2F7D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

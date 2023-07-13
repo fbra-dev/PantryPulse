@@ -1,0 +1,38 @@
+<mat-sidenav-container class="sidenav-container all-wrap">
+  <mat-sidenav #drawer class="sidenav mat-elevation-z10" fixedInViewport
+               [attr.role]="'dialog'"
+               [mode]="(isHandset$ | async) ? 'over' : 'side'"
+               [opened]='false'>
+    <mat-toolbar color="primary">Menu</mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item routerLink="">Sensoren</a>
+      <a mat-list-item routerLink="productView">Produkte</a>
+<!--      <a mat-list-item routerLink="project-overview">Projekt Übersicht</a>-->
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content class="page-wrap">
+    <mat-toolbar color="primary">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <button
+        type="button"
+        aria-label="Logout"
+        mat-icon-button
+        (click)="logout()">
+        <mat-icon aria-label="Logout">exit_to_app</mat-icon>
+      </button>
+      <span>PantryPulse</span>
+    </mat-toolbar>
+    <main class="content">
+      <router-outlet></router-outlet>
+    </main>
+    <footer>
+      <alert></alert>
+    </footer>
+  </mat-sidenav-content>
+</mat-sidenav-container>
