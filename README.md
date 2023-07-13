@@ -1,5 +1,8 @@
 # Pantry Pulse (Smart Scale Project)
 
+![top](https://github.com/fbra-dev/PantryPulse/assets/9578470/c5d8b3db-56d9-4861-9bfc-34dfae0d6dcc)
+![side](https://github.com/fbra-dev/PantryPulse/assets/9578470/a411ebe1-1bb6-4556-b6b3-d687cc90a880)
+
 ## Introduction
 
 This project was created during a hackathon by a team of three passionate individuals. We have developed an IoT-enabled smart scale using Arduino and various other components. This scale is designed to help manage pantry inventory by providing real-time weight data, facilitating usage tracking and planning shopping. It could also integrate with recipe apps, enabling automatic actions based on certain weight thresholds.
